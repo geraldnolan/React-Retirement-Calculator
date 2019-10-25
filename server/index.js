@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const volleyball = require('volleyball');
-//const routes = require('./routes.js');
+const routes = require('routes.js');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 
@@ -28,7 +28,7 @@ app.use(session({
 app.use(volleyball);
 
 //routes:
-//app.use('/api', routes);
+app.use('/api', routes);
 
 
 app.listen(PORT, () => {
