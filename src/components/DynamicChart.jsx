@@ -3,7 +3,12 @@ import { ResponsiveContainer, XAxis, YAxis, BarChart, Bar, Legend, Tooltip } fro
 
 import { formatMoney } from '../utils/formatMoney'
 
+
+
+
 class DynamicChart extends Component {
+
+  
   render() {
     const barArr = [{
       retireAmt: +this.props.retireAmt,
@@ -36,8 +41,8 @@ class DynamicChart extends Component {
             lineHeight: '40px'
           }}
         />
-        <Bar dataKey="retireAmt" fill="#7FDBFF" />
-        <Bar dataKey="endAmt" fill="#39CCCC" />
+        <Bar dataKey="retireAmt" fill="#0F4E94" name="Retirement Amount"/>
+        <Bar dataKey="endAmt" fill="#6aa43a" name="End Amount"/>
         </BarChart>
       </ResponsiveContainer>
     )

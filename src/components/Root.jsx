@@ -1,11 +1,13 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from './NavBar/NavBar';
 import Footer from './Footer';
 
 const Root = ({ children }) => (
   <div id="main">
+  
     <Navbar />
-     { children }
+    
+      { children }
     <Footer />
   </div>
 )
